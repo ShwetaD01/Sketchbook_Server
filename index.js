@@ -9,9 +9,7 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  cors: {
-    origin: "http://localhost:3000"
-  }
+  cors:  "http://localhost:3000"
 });
 
 io.on("connection", (socket) => {
